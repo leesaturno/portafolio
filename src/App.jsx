@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import WhatsAppButton from './components/WhatsAppButton';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -23,6 +24,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </Router>
   )
