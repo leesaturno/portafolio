@@ -1,6 +1,6 @@
 /* Projects Section Styles */
 .projects-container {
-  padding: 80px 24px;
+  padding: 85px 50px;
   background-color: #0a192f;
   min-height: 100vh;
 }
@@ -128,7 +128,7 @@
   border-radius: 3px;
   font-size: 0.75rem;
   font-weight: 400;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+ font-family: 'Inter', 'SF Mono', 'Fira Code', monospace, system-ui, sans-serif;
 }
 
 .project-links {
@@ -163,7 +163,7 @@
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .projects-container {
-    padding: 60px 16px;
+    padding: 60px 20px;
   }
 
   .section-title {

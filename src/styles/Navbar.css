@@ -151,7 +151,7 @@
   font-size: 0.85rem;
   transition: all 0.3s ease;
   letter-spacing: 1px;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+ font-family: 'Inter', 'SF Mono', 'Fira Code', monospace, system-ui, sans-serif;
 }
 
 /* Eliminado el estilo de numeración */

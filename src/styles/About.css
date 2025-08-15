@@ -21,7 +21,7 @@
 
 .title-number {
   color: #64ffda;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+ font-family: 'Inter', 'SF Mono', 'Fira Code', monospace, system-ui, sans-serif;
   font-size: 20px;
   font-weight: 400;
 }

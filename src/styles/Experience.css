@@ -61,7 +61,7 @@
     gap: 10px;
   }
   .experience-container {
-    padding: 30px 15px;
+    padding: 30px 20px;
   }
 }
 
@@ -74,7 +74,7 @@
 }
 
 .experience-period {
-  font-family: 'SF Mono', 'Fira Code', monospace;
+ font-family: 'Inter', 'SF Mono', 'Fira Code', monospace, system-ui, sans-serif;
   font-size: 0.85rem;
   color: #64ffda;
 }
@@ -158,7 +158,7 @@
   padding: 0px 5px;
   font-size: 0.75rem;
   color: #64ffda;
-  font-family: 'SF Mono', 'Fira Code', monospace;
+ font-family: 'Inter', 'SF Mono', 'Fira Code', monospace, system-ui, sans-serif;
   transition: all 0.3s ease;
 }
 
