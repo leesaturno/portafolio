@@ -16,7 +16,7 @@ const About = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <span className="title-number">01.</span> Sobre mí
+          <span className="title-number"></span> Sobre mí
         </motion.h2>
 
         <motion.div 
