@@ -59,6 +59,17 @@
   .about-section {
     padding: 40px 0;
   }
+  .about-container {
+    padding: 0 10px;
+    max-width: 98vw;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+  }
 
   .about-container {
     padding: 0 20px;
@@ -71,4 +82,4 @@
   .about-text p {
     font-size: 15px;
   }
-}
+  }

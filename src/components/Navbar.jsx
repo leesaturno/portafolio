@@ -4,6 +4,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import '../styles/Navbar.css';
 import { socialData } from '../data/social-data';
+import Footer from './Footer'; // Asegúrate de importar el componente Footer
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -23,6 +25,26 @@ const Navbar = () => {
       </div>
       
       <nav className={isOpen ? 'sidebar active' : 'sidebar'}>
+        {isOpen && (
+          <button
+            className="close-menu-btn"
+            onClick={toggleMenu}
+            style={{
+              position: 'fixed',
+              top: 20,
+              right: 20,
+              zIndex: 5000,
+              padding: '12px',          
+              cursor: 'pointer',
+              color: '#64ffda',
+              fontSize: '2.5rem',
+              border: 'none',
+            }}
+            aria-label="Cerrar menú"
+          >
+            <FaTimes />
+          </button>
+        )}
         <div className="sidebar-container">
           <div className="sidebar-logo">
             <Link to="/">
@@ -45,7 +67,7 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <Link to="/" className={`sidebar-link ${isActive('/')}`} onClick={toggleMenu}>
-                <div className="nav-line"></div>
+                <span className="nav-line"></span>
                 <span className="nav-text">Sobre mí</span>
               </Link>
             </motion.li>
@@ -56,7 +78,7 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <Link to="/experience" className={`sidebar-link ${isActive('/experience')}`} onClick={toggleMenu}>
-                <div className="nav-line"></div>
+                <span className="nav-line"></span>
                 <span className="nav-text">Experiencia</span>
               </Link>
             </motion.li>
@@ -67,7 +89,7 @@ const Navbar = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <Link to="/projects" className={`sidebar-link ${isActive('/projects')}`} onClick={toggleMenu}>
-                <div className="nav-line"></div>
+                <span className="nav-line"></span>
                 <span className="nav-text">Proyectos</span>
               </Link>
             </motion.li>
@@ -88,6 +110,12 @@ const Navbar = () => {
             </a>
           </div>
         </div>
+        {/* Footer global dentro del menú */}
+        {isOpen && (
+          <div style={{ width: '100%' }}>
+            <Footer />
+          </div>
+        )}
       </nav>
     </>
   );
